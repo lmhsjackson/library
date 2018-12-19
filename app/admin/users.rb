@@ -15,6 +15,9 @@ permit_params :name, :age, :address, :email
   index do
     selectable_column
     id_column
+    column :name
+    column :age
+    column :address
     column :email
     column :current_sign_in_at
     column :sign_in_count

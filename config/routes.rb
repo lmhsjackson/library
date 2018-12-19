@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
   resources :checkouts
-  resources :books
+  resources :checkouts
+  resources :checkouts
   devise_for :admins
   devise_for :users
+  resources :books
+  resources :checkouts
+  resources :books
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'devise/registrations#new'
+  root 'books#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
